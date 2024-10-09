@@ -1,0 +1,19 @@
+{
+  "name": "wordpress",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "sass": "sass --watch c:/MAMP/htdocs/wordpress/wp-content/themes/supernormal/supernormal/sass/style.scss c:/MAMP/htdocs/wordpress/wp-content/themes/supernormal/supernormal/sass/style.css"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "description": "",
+  "dependencies": {
+    "@wpmudev/shared-ui": "^2.12.24"
+  },
+  "devDependencies": {
+    "sass": "^1.77.8"
+  }
+}

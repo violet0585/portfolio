@@ -1,0 +1,394 @@
+/* reset.css */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+main,
+menu,
+nav,
+section,
+summary {
+    display: block;
+}
+
+audio,
+canvas,
+progress,
+video {
+    display: inline-block;
+    vertical-align: baseline;
+}
+
+audio:not([controls]) {
+    display: none;
+    height: 0;
+}
+
+[hidden],
+template {
+    display: none;
+}
+
+a {
+    background-color: transparent;
+}
+
+a:active,
+a:hover {
+    outline: 0;
+    text-decoration: none;
+}
+
+abbr[title] {
+    border-bottom: 1px dotted;
+}
+
+b,
+strong {
+    font-weight: bold;
+}
+
+dfn {
+    font-style: italic;
+}
+
+div:focus {
+    outline: none;
+}
+
+small {
+    font-size: 90%;
+}
+
+sub,
+sup {
+    font-size: 80%;
+    line-height: 0;
+    position: relative;
+    vertical-align: baseline;
+}
+
+sup {
+    top: -0.5em;
+}
+
+sub {
+    bottom: -0.25em;
+}
+
+img {
+    border: 0;
+}
+
+svg:not(:root) {
+    overflow: hidden;
+}
+
+figure {
+    margin: 0;
+}
+
+figure img {
+    width: 100%;
+    display: block;
+}
+
+
+pre {
+    overflow: auto;
+}
+
+code,
+kbd,
+pre,
+samp {
+    font-size: 1rem;
+}
+
+button,
+input,
+optgroup,
+select,
+textarea {
+    border-radius: 0;
+    color: inherit;
+    font: inherit;
+    margin: 0;
+}
+
+button {
+    overflow: visible;
+}
+
+button,
+select {
+    text-transform: none;
+}
+
+button[disabled],
+html input[disabled] {
+    cursor: default;
+}
+
+button::-moz-focus-inner,
+input::-moz-focus-inner {
+    border: 0;
+    padding: 0;
+}
+
+input {
+    line-height: normal;
+}
+
+input[type="checkbox"],
+input[type="radio"] {
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    padding: 0;
+}
+
+input[type="number"]::-webkit-inner-spin-button,
+input[type="number"]::-webkit-outer-spin-button {
+    height: auto;
+}
+
+input[type="search"] {
+    -webkit-appearance: none;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+input[type="search"]::-webkit-search-cancel-button,
+input[type="search"]::-webkit-search-decoration {
+    -webkit-appearance: none;
+}
+
+input[type="search"]:focus {
+    -webkit-box-shadow: none;
+    box-shadow: none;
+}
+
+fieldset {
+    border: 1px solid #eee;
+    margin: 0;
+    padding: 1rem;
+}
+
+legend {
+    border: 0;
+    padding: 0;
+}
+
+textarea {
+    overflow: auto;
+}
+
+label {
+    font-size: 0.875rem;
+    margin-bottom: 0.25rem;
+}
+
+optgroup {
+    font-weight: bold;
+}
+
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+
+td,
+th {
+    padding: 0;
+}
+
+
+dfn,
+cite,
+em,
+i {
+    font-style: italic;
+}
+
+cite {
+    font-weight: bold;
+}
+
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+    content: "";
+}
+
+blockquote,
+q {
+    quotes: "" "";
+}
+
+blockquote {
+    color: #333;
+    font-style: normal;
+    margin: 0;
+    padding: 0;
+    position: relative;
+}
+
+blockquote:before {
+    color: #ddd;
+    content: "";
+    float: left;
+}
+
+blockquote * {
+    margin-bottom: 0;
+}
+
+blockquote blockquote {
+    margin-left: 1.5rem;
+    margin-top: 1.5rem;
+}
+
+blockquote cite {
+    font-style: normal;
+}
+
+address {
+    margin: 0 0 1.5rem;
+}
+
+pre {
+    background: #eee;
+    border-left: 1px solid #eee;
+    max-width: 100%;
+    overflow: auto;
+    padding: 1.5rem;
+}
+
+abbr,
+acronym {
+    border-bottom: 1px dotted #222;
+    cursor: help;
+}
+
+mark,
+ins {
+    background: #eee;
+    padding: 0.1rem;
+    text-decoration: none;
+}
+
+big {
+    font-size: 1.2rem;
+}
+
+html {
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+* {
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+*,
+*:before,
+*:after {
+    -webkit-box-sizing: inherit;
+    box-sizing: inherit;
+}
+
+body {
+    background: #fff;
+}
+
+hr {
+    // border: 1px solid $bg-black;
+    // height: 1px;
+    // width: 100%;
+    color: black;
+    margin-bottom: 20px;
+    // -webkit-box-sizing: border-box;
+    // box-sizing: border-box;
+}
+
+ul,
+ol {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+/* ul {
+    list-style: square inside;
+}
+
+ol {
+    list-style: decimal inside;
+} */
+li {
+
+    ul,
+    ol {
+        margin-bottom: 0;
+        // padding-left:20px;
+    }
+}
+
+dt {
+    font-weight: bold;
+}
+
+dd {
+    margin: 0 1.5em 1.5em;
+}
+
+dl {
+    margin: 0;
+}
+
+img {
+    height: auto;
+    max-width: 100%;
+}
+
+table {
+    border-top: 1px solid #ddd;
+    margin: 0 0 1.5rem;
+    text-align: left;
+    width: 100%;
+}
+
+caption,
+th {
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+caption {
+    color: #777;
+}
+
+th,
+td {
+    border-bottom: 1px solid #eee;
+    padding: 0.5rem;
+}
+
+thead {
+    background: #eee;
+}
+
+
+
+img {
+    display: block;
+    height: auto;
+    /* Make sure images are scaled correctly. */
+    max-width: 100%;
+    /* Adhere to container width. */
+}

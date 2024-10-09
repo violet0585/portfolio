@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="24px" height="24px" viewBox="0 0 24 24" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 61.2 (89653) - https://sketch.com -->
+    <title>Icon / scroll-top</title>
+    <desc>Created with Sketch.</desc>
+    <g id="Icon-/-scroll-top" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <line x1="6" y1="7.5" x2="18" y2="7.5" id="Line" stroke="#FFFFFF" fill-rule="nonzero"></line>
+        <polyline id="Path-3" stroke="#FFFFFF" fill-rule="nonzero" points="6 16 12 10 18 16"></polyline>
+    </g>
+</svg>

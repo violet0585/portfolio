@@ -1,0 +1,138 @@
+.category-title-wrap {
+    margin-bottom: 40px;
+    display: flex;
+    flex-direction: column;
+}
+
+.card-type {
+    position: relative;
+    display: block;
+    width: 100%;
+    padding: 20px;
+    border: 1px solid $bg-hr;
+    border-radius: 8px;
+    margin-bottom: 20px;
+    -webkit-transition: .3s;
+    transition: .3s;
+
+    &:hover {
+        background-color: $bg-white;
+
+        .entry-title,
+        .entry-category,
+        .entry-date,
+        .entry-excerpt {
+            color: $bg-black;
+        }
+    }
+
+    .entry-thumbnail {
+        opacity: 1;
+        display: block;
+        width: 100%;
+        border-radius: 8px;
+        overflow: hidden;
+        -webkit-transition: .3s;
+        transition: .3s;
+
+        img {
+            width: 100%;
+        }
+    }
+
+}
+
+.work-item {
+    .entry-title {}
+}
+
+.blog-item {
+    .entry-title {
+        font-size: 18px;
+        height: 48px;
+        overflow: hidden;
+    }
+
+    .entry-excerpt {
+        font-size: 14px;
+        height: 48px;
+        overflow: hidden;
+    }
+}
+
+.entry-text-wrap {
+    margin-top: 16px;
+}
+
+.entry-title {
+    font-size: 20px;
+    line-height: 1.5;
+    height: 80px;
+    overflow: hidden;
+}
+
+.entry-info {
+    display: flex;
+    justify-content: space-between;
+}
+
+.entry-category,
+.entry-date {
+    font-size: 14px;
+    color: $color-text-light-03;
+}
+
+.entry-excerpt {
+    font-size: 14px;
+    color: $color-text-light-03;
+}
+
+.empty-wrap {
+    text-align: center;
+    margin: auto;
+
+    .empty-graphic {
+        width: 200px;
+        height: 200px;
+        margin: auto;
+        background: url(img/img-empty.png) no-repeat center;
+        background-size: contain;
+    }
+
+    p {
+        margin-top: 20px;
+    }
+}
+
+/*--------------------------------------------------------------
+# responsive - Tablet
+--------------------------------------------------------------*/
+@media screen and (max-width: 768px) {}
+
+
+/*--------------------------------------------------------------
+# responsive - Mobile
+--------------------------------------------------------------*/
+@media screen and (max-width: 480px) {
+
+    .card-type {
+        padding: 16px;
+    }
+
+    .blog-item {
+        .entry-title {
+            font-size: 16px;
+            height: 45px;
+        }
+    }
+
+    .entry-title {
+        font-size: 18px;
+        height: 60px;
+    }
+
+    .entry-category,
+    .entry-date {
+        font-size: 12px;
+    }
+}

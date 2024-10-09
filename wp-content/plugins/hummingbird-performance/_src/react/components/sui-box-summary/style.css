@@ -1,0 +1,11 @@
+.sui-2-12-24 .sui-wrap #wrap-wphb-summary {
+  margin-bottom: 30px;
+}
+.sui-2-12-24 .sui-wrap #wrap-wphb-summary .sui-summary-segment:last-of-type {
+  overflow: visible;
+}
+.sui-2-12-24 .sui-wrap #wrap-wphb-summary .sui-summary-segment:last-of-type .sui-tooltip > [class^=sui-icon-] {
+  line-height: 15px;
+  margin-left: 10px;
+  vertical-align: middle;
+}/*# sourceMappingURL=style.css.map */

@@ -1,0 +1,128 @@
+.marquee {
+    margin: 0 auto;
+    width: 100%; // or 100% inside a container
+    // height: 60px;
+    white-space: nowrap;
+    overflow: hidden;
+    box-sizing: border-box;
+    position: relative;
+
+    &:before,
+    &:after {
+        position: absolute;
+        top: 0;
+        width: 50px;
+        height: 60px;
+        content: "";
+        z-index: 1;
+    }
+
+    &:before {
+        left: 0;
+        // background: linear-gradient(to right, $bg-black 5%, transparent 100%);
+    }
+
+    &:after {
+        right: 0;
+        // background: linear-gradient(to left, $bg-black 5%, transparent 100%);
+    }
+}
+
+.marquee__content {
+    width: 300% !important;
+    display: flex;
+    line-height: 12vw; /*increased*/
+    animation: marquee 25s linear infinite forwards;
+    // &:hover {
+    //   animation-play-state: paused;
+    // } 
+}
+
+.list-inline {
+    display: flex;
+    justify-content: space-between;
+    // width: 33.33%;
+    width: 70%;
+
+    /* reset list */
+    list-style: none;
+    padding: 0;
+    margin: 0;
+
+    li {
+        position: relative;
+        font-size: 10vw;
+        font-weight: bold;
+        display: flex;
+        align-items: center;
+        color: $bg-lightgray-02;
+        // margin-top: 30px;
+        // font-size: 3vw;
+        
+
+        &:after {
+            position: relative;
+            left: 0;
+            top: 0;
+            content: '';
+            display: inline-block;
+            width: 5vw;
+            height: 14vw;
+            // background: url(svg/arrow-down.svg) no-repeat center;
+            background-size: 60%;
+            text-align: center;
+            padding: 0 1vw;
+            margin-bottom: 0;
+        }
+    }
+}
+
+@keyframes marquee {
+    0% {
+        transform: translateX(0);
+    }
+
+    100% {
+        transform: translateX(-66.6%);
+    }
+}
+
+/*--------------------------------------------------------------
+# responsive - Tablet
+--------------------------------------------------------------*/
+@media screen and (max-width: 768px) {}
+
+
+/*--------------------------------------------------------------
+# responsive - Mobile
+--------------------------------------------------------------*/
+@media screen and (max-width: 480px) {
+    .marquee {
+        width: 100%; // or 100% inside a container
+        height: 60px;
+
+        &:before,
+        &:after {
+            width: 50px;
+            height: 60px;
+        }
+
+    }
+
+    .list-inline {
+        width: auto;
+
+        li {
+            font-size: 12vw;
+            line-height: 40px;
+            padding-left: 40px;
+
+            &:after {
+                width: 40px;
+                height: 40px;
+                background-size: 60%;
+            }
+        }
+    }
+
+}

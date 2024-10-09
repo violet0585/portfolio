@@ -1,0 +1,87 @@
+.sui-2-12-24 .sui-wrap .sui-progress {
+  display: flex;
+  align-items: center;
+}
+.sui-2-12-24 .sui-wrap .sui-progress .sui-progress-icon {
+  width: 26px;
+  text-align: center;
+}
+.sui-2-12-24 .sui-wrap .sui-progress .sui-progress-icon [class*=sui-icon-] {
+  display: block;
+  font-size: 16px;
+}
+.sui-2-12-24 .sui-wrap .sui-progress .sui-progress-icon [class*=sui-icon-]:before {
+  display: block;
+}
+.sui-2-12-24 .sui-wrap .sui-progress .sui-progress-icon + .sui-progress-text {
+  margin-left: 0;
+}
+.sui-2-12-24 .sui-wrap .sui-progress .sui-progress-icon + .sui-progress-bar {
+  margin-left: 5px;
+}
+.sui-2-12-24 .sui-wrap .sui-progress .sui-progress-text {
+  min-width: 40px;
+  flex: 0 0 auto;
+  color: #888888;
+  font: bold 12px/20px "Roboto", Arial, sans-serif;
+  letter-spacing: -0.25px;
+  text-align: center;
+}
+.sui-2-12-24 .sui-wrap .sui-progress .sui-progress-text span {
+  display: block;
+}
+.sui-2-12-24 .sui-wrap .sui-progress .sui-progress-text + .sui-progress-bar {
+  margin-left: 5px;
+}
+.sui-2-12-24 .sui-wrap .sui-progress .sui-progress-bar {
+  height: 10px;
+  overflow: hidden;
+  flex: 1;
+  border-radius: div(10px, 2);
+  background-color: #E6E6E6;
+}
+.sui-2-12-24 .sui-wrap .sui-progress .sui-progress-bar span {
+  height: 100%;
+  display: block;
+  background-color: #17A8E3;
+}
+.sui-2-12-24 .sui-wrap .sui-progress-block {
+  width: 100%;
+  max-width: 100%;
+  min-height: 60px;
+  display: flex;
+  align-items: center;
+  padding: 14px 14px;
+  border: 1px solid #E6E6E6;
+  border-radius: 4px;
+  background-color: #FFFFFF;
+}
+.sui-2-12-24 .sui-wrap .sui-progress-block .sui-progress {
+  flex: 1;
+}
+.sui-2-12-24 .sui-wrap .sui-progress-block .sui-progress + .sui-button,
+.sui-2-12-24 .sui-wrap .sui-progress-block .sui-progress + .sui-button-icon {
+  margin-left: 10px;
+}
+.sui-2-12-24 .sui-wrap .sui-progress-block .sui-button,
+.sui-2-12-24 .sui-wrap .sui-progress-block .sui-button-icon {
+  flex: 0 0 auto;
+}
+.sui-2-12-24 .sui-wrap .sui-progress-block .sui-button-icon [class*=sui-icon-],
+.sui-2-12-24 .sui-wrap .sui-progress-block a.sui-button-icon [class*=sui-icon-],
+.sui-2-12-24 .sui-wrap .sui-progress-block button.sui-button-icon [class*=sui-icon-] {
+  font-size: 16px;
+}
+.sui-2-12-24 .sui-wrap .sui-progress-block + .sui-progress-state {
+  margin-top: 10px;
+}
+.sui-2-12-24 .sui-wrap .sui-progress-state {
+  display: block;
+  color: #888888;
+  font: 400 13px/22px "Roboto", Arial, sans-serif;
+  letter-spacing: -0.25px;
+  text-align: center;
+}
+.sui-2-12-24 .sui-wrap .sui-progress-state span {
+  display: block;
+}/*# sourceMappingURL=style.css.map */

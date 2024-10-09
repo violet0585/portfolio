@@ -1,0 +1,115 @@
+.sui-2-12-24 .sui-wrap .box-caching-status .sui-row-with-sidenav {
+  margin-bottom: 0;
+}
+.sui-2-12-24 .sui-wrap .box-caching-status .sui-row-with-sidenav .sui-sidenav {
+  padding: 30px;
+  border-top-left-radius: 4px;
+  background-color: #F8F8F8;
+}
+.sui-2-12-24 .sui-wrap .box-caching-status .sui-row-with-sidenav .sui-sidenav .wizard-bar-subtitle {
+  font-size: 11px;
+  line-height: 20px;
+  font-weight: 700;
+  color: #AAAAAA;
+  text-transform: uppercase;
+}
+.sui-2-12-24 .sui-wrap .box-caching-status .sui-row-with-sidenav .sui-sidenav .wizard-bar-title {
+  display: flex;
+  align-items: center;
+  margin-bottom: 33px;
+}
+.sui-2-12-24 .sui-wrap .box-caching-status .sui-row-with-sidenav .sui-sidenav .wizard-bar-title h4 {
+  margin: 0;
+  line-height: 20px;
+}
+.sui-2-12-24 .sui-wrap .box-caching-status .sui-row-with-sidenav .sui-sidenav .wizard-steps-container ul {
+  margin: 0;
+}
+@media (max-width: 1199px) {
+  .sui-2-12-24 .sui-wrap .box-caching-status .sui-row-with-sidenav .sui-sidenav .wizard-steps-container ul {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+}
+.sui-2-12-24 .sui-wrap .box-caching-status .sui-row-with-sidenav .sui-sidenav .wizard-steps-container .wizard-bar-step {
+  display: inline-block;
+  font-size: 13px;
+  color: #AAAAAA;
+  line-height: 22px;
+  font-weight: 500;
+  margin-bottom: 0;
+}
+.sui-2-12-24 .sui-wrap .box-caching-status .sui-row-with-sidenav .sui-sidenav .wizard-steps-container .wizard-bar-step .wizard-bar-step-number {
+  display: inline-block;
+  margin-right: 10px;
+  text-align: center;
+  border-radius: 50%;
+  width: 22px;
+  height: 22px;
+  font-size: 11px;
+  background-color: #F2F2F2;
+  border: 1px solid #DDDDDD;
+}
+@media (max-width: 1199px) {
+  .sui-2-12-24 .sui-wrap .box-caching-status .sui-row-with-sidenav .sui-sidenav .wizard-steps-container .wizard-bar-step .wizard-bar-step-number {
+    display: block;
+    margin: 0 auto 5px auto;
+  }
+}
+.sui-2-12-24 .sui-wrap .box-caching-status .sui-row-with-sidenav .sui-sidenav .wizard-steps-container .wizard-bar-step.current {
+  color: #333333;
+}
+.sui-2-12-24 .sui-wrap .box-caching-status .sui-row-with-sidenav .sui-sidenav .wizard-steps-container .wizard-bar-step.current .wizard-bar-step-number {
+  background-color: #FFFFFF;
+  border-color: #333333;
+}
+.sui-2-12-24 .sui-wrap .box-caching-status .sui-row-with-sidenav .sui-sidenav .wizard-steps-container .wizard-bar-step.done .wizard-bar-step-number {
+  background-color: #1ABC9C;
+  border-color: #1ABC9C;
+}
+.sui-2-12-24 .sui-wrap .box-caching-status .sui-row-with-sidenav .sui-sidenav .wizard-steps-container .wizard-bar-step.done .wizard-bar-step-number .sui-icon-check::before {
+  color: #FFFFFF;
+}
+@media (min-width: 1200px) {
+  .sui-2-12-24 .sui-wrap .box-caching-status .sui-row-with-sidenav .sui-sidenav .wizard-steps-container .wizard-bar-step {
+    display: block;
+  }
+}
+@media (max-width: 1199px) {
+  .sui-2-12-24 .sui-wrap .box-caching-status .sui-row-with-sidenav .sui-sidenav .wizard-steps-container .wizard-bar-step {
+    width: 70px;
+    text-align: center;
+  }
+}
+.sui-2-12-24 .sui-wrap .box-caching-status .sui-row-with-sidenav .sui-sidenav .wizard-steps-container svg line {
+  stroke-width: 4px;
+}
+.sui-2-12-24 .sui-wrap .box-caching-status .sui-row-with-sidenav .sui-sidenav .wizard-steps-container svg.svg-desktop {
+  height: 40px;
+  width: 22px;
+  margin-left: 10px;
+  display: none;
+}
+@media (min-width: 1200px) {
+  .sui-2-12-24 .sui-wrap .box-caching-status .sui-row-with-sidenav .sui-sidenav .wizard-steps-container svg.svg-desktop {
+    display: block;
+  }
+}
+.sui-2-12-24 .sui-wrap .box-caching-status .sui-row-with-sidenav .sui-sidenav .wizard-steps-container svg.svg-mobile {
+  width: 100%;
+  height: 4px;
+  display: block;
+  margin-bottom: -14px;
+  padding: 0 35px;
+}
+@media (min-width: 1200px) {
+  .sui-2-12-24 .sui-wrap .box-caching-status .sui-row-with-sidenav .sui-sidenav .wizard-steps-container svg.svg-mobile {
+    display: none;
+  }
+}
+@media (max-width: 479px) {
+  .sui-2-12-24 .sui-wrap .box-caching-status .sui-row-with-sidenav .sui-sidenav {
+    padding: 20px;
+  }
+}/*# sourceMappingURL=style.css.map */

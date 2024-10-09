@@ -1,0 +1,230 @@
+article {
+    width: 100%;
+    margin: auto;
+}
+
+.thumbnail-img {
+    border-bottom: 40px;
+    border-radius: 12px;
+    overflow: hidden;
+}
+
+.post-header {
+    padding: 40px 0;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    color: $color-text-primary;
+
+    p {
+        color: $color-text-primary;
+    }
+
+    .post-title {
+        font-size: 36px;
+        margin-bottom: 12px;
+    }
+
+    .post-desc {
+        margin-top: 20px;
+        font-size: 14px;
+        text-align: center;
+    }
+
+
+    .post-info {
+        margin: 20px 0;
+    }
+
+    .post-date {
+        font-size: 14px;
+        color: $color-text-light-03;
+        margin-right: 12px;
+    }
+
+    .post-categories {
+        li {
+            display: inline-block;
+            margin: 0 8px 8px 0;
+        }
+
+        a {
+            font-size: 14px;
+            color: $color-text-primary;
+        }
+    }
+
+    .post-tags {
+        font-size: 0;
+
+        a {
+            font-size: 14px !important;
+            line-height: 1;
+            padding: 8px 12px;
+            color: $color-text-light-01;
+            border: none;
+            background-color: $bg-darkgray-01;
+            border-radius: 4px;
+            display: inline-block;
+            margin: 0 8px 8px 0;
+
+            &:hover {
+                background: $color-primary;
+
+            }
+        }
+
+    }
+}
+
+.thumbnail-background {
+    width: 100%;
+    height: 320px;
+    background-size: cover !important;
+}
+
+hr.divider {
+    margin: 40px 0;
+}
+
+.wp-block-file {
+    padding: 8px;
+    margin-bottom: 12px;
+    border: 1px solid $bg-hr;
+    display: flex;
+    justify-content: space-between;
+
+    a {
+        color: $color-text-light-02;
+    }
+
+    a.wp-block-file__button {
+        color: $color-text-light-01
+    }
+}
+
+/*--------------------------------------------------------------
+# Work
+--------------------------------------------------------------*/
+.single-work {
+    .post-header {
+        margin-top: 120px;
+        padding: 0;
+
+        .post-title {
+            font-size: 80px;
+            margin-top: 0;
+        }
+
+        .customfield {
+            margin-right: 24px;
+        }
+    }
+
+    h1,
+    h2,
+    h3,
+    h4 {
+        font-weight: bold;
+    }
+
+    h4 {
+        color: $color-text-primary;
+    }
+
+    article {
+        .wp-block-columns {
+            margin: 160px 0;
+        }
+    }
+
+}
+
+figure,
+.wp-block-image {
+    margin: 20px 0;
+
+
+    img {
+        @include border-radius($radius-l);
+        overflow: hidden;
+    }
+}
+
+.wp-block-video {
+    video {
+        @include border-radius($radius-l);
+        overflow: hidden;
+    }
+}
+
+.wp-block-embed-youtube {
+    .wp-block-embed__wrapper {
+        position: relative;
+        width: 100%;
+        padding: 55.6% 0 6px;
+        @include border-radius($radius-l);
+        overflow: hidden;
+    }
+
+    iframe {
+        display: block;
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+    }
+}
+
+.wp-block-embed {
+    margin: 2rem 0;
+    position: relative;
+    width: 100%;
+}
+
+.wp-block-button {
+    padding: 20px 0;
+    text-align: center;
+}
+
+.wp-block-button__link {
+    color: $color-text-primary !important;
+}
+
+/*--------------------------------------------------------------
+# responsive - Tablet
+--------------------------------------------------------------*/
+@media screen and (max-width: 768px) {}
+
+
+/*--------------------------------------------------------------
+# responsive - Mobile
+--------------------------------------------------------------*/
+@media screen and (max-width: 480px) {
+
+    .single-work {
+        .post-header {
+            margin-top: 20px;
+
+            .post-title {
+                font-size: 40px;
+            }
+
+            .customfield {
+                margin-right: 16px;
+            }
+        }
+
+        article {
+            .wp-block-columns {
+                margin: 80px 0;
+            }
+
+            h2 {
+                font-size: 32px;
+            }
+        }
+
+    }
+}

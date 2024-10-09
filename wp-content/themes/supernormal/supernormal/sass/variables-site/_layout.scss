@@ -1,0 +1,301 @@
+$size__site-maxwidth: 1800px;
+
+body {
+    position: relative;
+    overflow-x: hidden;
+    width: 100%;
+    margin: 0 auto;
+    background-color: $bg-white;
+    -ms-overflow-style: none;
+    overflow: auto;
+}
+
+.site-main {
+    min-height: 720px;
+    padding-top: 80px;
+}
+
+section {
+    clear: both;
+    position: relative;
+    // padding: 80px 0;
+    padding-top: 7vw;
+
+    .marquee-padding {
+        padding-top: 5px;
+    }
+}
+
+.container2 {
+    position: relative;
+    width: 100%;
+    max-width: 1400px;
+    padding: 0;
+    margin: auto;
+}
+
+.container {
+    position: relative;
+    width: 100%;
+    max-width: 100%;
+    padding: 0;
+    margin: auto;
+
+    .row {
+        position: relative;
+        display: flex;
+        flex-direction: row;
+        
+        font-size: 0;
+        flex-wrap: wrap;
+        justify-content: space-between;
+    }
+    .row-btn {
+        position: relative;
+        display: flex;
+        flex-wrap: wrap;
+        margin: 6px 0;
+        justify-content: space-between;
+        align-items: center;
+        padding-right: 20px;
+    }
+
+    .col-2,
+    .col-3,
+    .col-4,
+    .col-5,
+    .col-6,
+    .col-7,
+    .col-8,
+    .col-9,
+    .col-12,
+    .col-article,
+    .col-sidebar {
+        position: relative;
+        min-height: 1px;
+        display: inline-block;
+        padding-left: 12px;
+        padding-right: 12px;
+        vertical-align: top;
+    }
+}
+
+.col-2 {
+    // width: 16.66666667%;
+    width: 18%;
+}
+
+.col-3 {
+    width: 25%;
+}
+
+.col-4 {
+    width: 33.33333333%;
+}
+
+.col-5 {
+    width: 36vw;
+}
+
+.col-6 {
+    width: 50%;
+}
+
+.col-7 {
+    width: 58.3333333%;
+}
+
+.col-8 {
+    width: 66.66666667%;
+}
+
+.col-9 {
+    width: 75%;
+}
+
+.col-12 {
+    width: 100%;
+}
+
+.single-layout {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 40px;
+}
+
+
+
+
+.work-single-layout {}
+
+
+.align-right {
+    width: 360px;
+
+}
+
+.align-left {
+    width: calc(100% - 360px);
+    padding-right: 40px;
+}
+
+/* ------ */
+
+/* Responsive */
+
+/* ------ */
+
+
+@media only screen and (max-width: 1440px) {
+    .container {
+        padding: 0 40px;
+    }
+    .col-5 {
+        width: auto;
+    }
+    .container2 {
+        position: relative;
+        width: 100%;
+        max-width: 1000px;
+        padding: 0;
+        margin: auto;
+    }
+}
+
+@media only screen and (max-width: 940px) {
+    .col-2 {
+        width: 33.3333%;
+    }
+
+    .col-3 {
+        width: 25%;
+    }
+
+    .align-right {
+        width: 240px;
+
+    }
+
+    .align-left {
+        width: calc(100% - 240px);
+        padding-right: 20px;
+    }
+
+}
+
+@media only screen and (max-width: 768px) {
+    section {
+        padding: 60px 0;
+    }
+
+
+    .container {
+        width: 100%;
+        max-width: 768px;
+        padding: 0 24px;
+    }
+
+    .row {
+        margin-right: -8px;
+        margin-left: -8px;
+    }
+
+    .col-2,
+    .col-3,
+    .col-4,
+    .col-5,
+    .col-6,
+    .col-7,
+    .col-8,
+    .col-12 {
+        padding-left: 8px;
+        padding-right: 8px;
+    }
+
+    .col-9 {
+        width: 100%;
+    }
+
+    .col-8 {
+        width: 100%;
+    }
+
+    .col-6 {
+        width: 100%;
+    }
+
+    .col-4 {
+        width: 50%;
+    }
+
+    .col-3 {
+        width: 33.3333%;
+    }
+}
+
+@media only screen and (max-width: 480px) {
+    .section-blog {}
+
+    section {
+        padding: 40px 0;
+    }
+
+    .container {
+        width: 100%;
+        max-width: 480px;
+        min-width: 320px;
+        padding: 0 20px;
+    }
+
+    .site-main {
+        padding-top: 60px;
+    }
+
+    .single-layout {
+        display: block;
+        margin-top: 40px;
+    }
+
+    .align-right {
+        width: 100%;
+
+    }
+
+    .align-left {
+        width: 100%;
+        padding-right: 0;
+    }
+
+    .row {
+        margin-left: -8px;
+        margin-right: -8px;
+    }
+
+    .col-2,
+    .col-3,
+    .col-4,
+    .col-5,
+    .col-6,
+    .col-7,
+    .col-8,
+    .col-9 {
+        padding-left: 8px;
+        padding-right: 8px;
+    }
+
+    .col-4 {
+        width: 100%;
+    }
+
+    .col-6 {
+        width: 100%;
+    }
+
+    .col-9 {
+        width: 100%;
+    }
+
+    .col-3 {
+        width: 50%;
+    }
+}

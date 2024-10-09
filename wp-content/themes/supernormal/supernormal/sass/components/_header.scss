@@ -1,0 +1,438 @@
+// Header
+.site-header {
+	width: 100%;
+	height: 80px;
+	position: fixed;
+	padding: 30px 4vw;
+	margin: auto;
+	top: 0;
+	left: 0;
+	z-index: 10;
+	background-color: transparent;
+
+	.home & {
+		background-color: transparent;
+	}
+
+	.container {
+		position: relative;
+		width: 100%;
+		max-width: 100%;
+		padding: 0;
+		margin: auto;
+	}
+
+	.site-logo-wrap {
+		position: relative;
+		display: inline-block;
+		z-index: 10;
+	}
+
+	.site-branding {
+		z-index: 2;
+		width: 160px;
+		margin: 0;
+		height: 40px;
+		line-height: 50px;
+		z-index: 2;
+		opacity: 1;
+		// background: url(img/designbase-logotype-white.png) no-repeat center;
+		background-size: 160px;
+	}
+
+}
+
+.site-navigation {
+	float: right;
+	display: flex;
+	align-items: center;
+
+}
+
+/*--------------------------------------------------------------
+# Header - Navigation Menus
+--------------------------------------------------------------*/
+ul.menu {
+	list-style: none;
+
+	>li {
+		display: inline-block;
+		position: relative;
+		margin-left: 100px;
+
+		&.button {
+			padding: 12px;
+
+			a {
+				font-size: 15px;
+				color: $bg-darkgray-02 !important;
+				font-weight: normal;
+				
+
+				&:hover {
+					color: $color-primary !important;
+				}
+			}
+		}
+
+		&.current-menu-item.button {
+
+			a,
+			a:hover {
+				color: $bg-darkgray-02 !important;
+			}
+		}
+
+		>a {
+			font-size: 15px;
+			position: relative;
+			display: block;
+			color: $color-primary;
+
+			&:hover {
+				text-decoration: underline;
+			}
+		}
+
+		// &.current_page_parent>a,
+		&.current-post-ancestor>a,
+		&.current-menu-item>a,
+		&.current-menu-parent>a {
+			color: $color-primary;
+			text-decoration: underline;
+
+			&:after {
+				content: '';
+				width: 4px;
+				height: 4px;
+				border-radius: 50%;
+				background: $color-text-light-01;
+				position: absolute;
+				left: 50%;
+				top: 0;
+			}
+		}
+
+		&.menu-item-has-children {
+			>ul {
+				li {
+					a {
+						text-align: left;
+						display: block;
+						padding: 12px;
+						color: $color-text-light-01;
+						height: auto;
+						line-height: 1;
+						font-size: 14px;
+					}
+
+					&.menu-item-has-children {
+						position: relative;
+					}
+
+					&.current-menu-item,
+					&:hover {
+						a {
+							color: $color-text-light-01;
+							background-color: $color-primary;
+						}
+					}
+				}
+			}
+		}
+
+		// 2depth
+		&.focus,
+		&:hover {
+			>ul {
+				opacity: 1;
+				top: 120%;
+				visibility: visible;
+
+				li {
+					border-radius: 8px;
+				}
+
+				li.focus,
+				li:hover {
+					>ul {
+						left: 100%;
+						opacity: 1;
+						top: 40px;
+						visibility: visible;
+					}
+				}
+
+			}
+		}
+
+		ul {
+			background: $bg-darkgray-01;
+			position: absolute;
+			z-index: 9999;
+			visibility: hidden;
+			opacity: 0;
+			padding: 8px;
+			overflow: hidden;
+			border-radius: 8px;
+			-webkit-transition: 0.3s;
+			transition: 0.3s;
+			width: 160px;
+		}
+
+		>ul {
+			left: 0;
+			top: 160%;
+
+			ul {
+				left: 160px;
+			}
+		}
+	}
+
+}
+
+
+
+// Mobile
+.menu-container {
+	position: fixed;
+	width: 100%;
+	height: 100%;
+	top: 0;
+	left: 0;
+	z-index: 9;
+	opacity: 0;
+	visibility: hidden;
+	pointer-events: none;
+	-webkit-transition: 0.2s;
+	transition: 0.2s;
+	-moz-transition: 0.2s;
+	-ms-transition: 0.2s;
+	-o-transition: 0.2s;
+
+	&.active {
+		opacity: 1;
+		visibility: visible;
+		pointer-events: auto;
+
+		.more-navigation {
+			top: 0;
+		}
+
+		.overlay {
+			visibility: visible;
+			opacity: 1;
+			-webkit-transition: 0.2s;
+			transition: 0.2s;
+			-moz-transition: 0.2s;
+			-ms-transition: 0.2s;
+			-o-transition: 0.2s;
+		}
+	}
+
+	.overlay {
+		position: absolute;
+		width: 100%;
+		height: 100%;
+		opacity: 0;
+		visibility: hidden;
+		background: rgba(0, 0, 0, 0.85);
+		z-index: 0;
+	}
+
+	.more-navigation {
+		position: absolute;
+		top: -100px;
+		width: 100%;
+		max-width: 420px;
+
+		overflow-y: scroll;
+		padding-top: 120px;
+		z-index: 10;
+		background: $bg-black;
+		-webkit-transition: top 0.3s ease-in-out;
+		transition: top 0.3s ease-in-out;
+		-moz-transition: top 0.3s ease-in-out;
+		-ms-transition: top 0.3s ease-in-out;
+		-o-transition: top 0.3s ease-in-out;
+
+		.toggle-btn {
+			width: 48px;
+			height: 48px;
+			display: block;
+			position: absolute;
+			background: url(svg/icon-arrow-down-w.svg) no-repeat center;
+			background-size: 20px;
+			border: 1px solid $bg-hr;
+			@include border-radius($radius-m);
+			right: 4px;
+			top: 4px;
+			z-index: 1;
+			transform: rotate(0deg);
+			transition: 0.3s;
+
+			&.show {
+				transform: rotate(180deg);
+				transition: 0.3s;
+			}
+		}
+
+		.button.menu-item {
+			margin-left: 0;
+		}
+
+		li {
+			position: relative;
+			margin-bottom: 12px;
+
+			:last-child {
+				margin-bottom: 0;
+			}
+
+			a {
+				position: relative;
+				display: block;
+				text-align: left;
+				font-size: 40px;
+				line-height: 1;
+				padding: 8px 0;
+				@include border-radius($radius-m);
+				color: $color-text-light-02;
+			}
+
+			&.button {
+				height: auto;
+				line-height: auto;
+				margin-top: 80px;
+				margin-bottom: 40px;
+				padding: 0;
+				display: block;
+				border: none;
+				@include border-radius($radius-m);
+
+				a {
+					font-size: 20px;
+					padding: 12px;
+					color: #fff;
+					text-align: center;
+					font-weight: normal;
+				}
+
+			}
+
+			&.current-post-ancestor,
+			&.current-menu-parent {
+
+				>a {
+					color: $color-text-light-01;
+					background-color: $bg-white;
+				}
+			}
+
+			// 2depth
+			.sub-menu {
+				display: none;
+				margin-left: 0;
+				padding: 12px;
+
+				li {
+					border-bottom: none;
+
+					&.current-menu-item {
+
+						>a {
+							color: $color-text-light-01;
+							background-color: $bg-white;
+						}
+					}
+				}
+
+				a {
+					font-size: 16px;
+					padding: 12px;
+				}
+			}
+		}
+	}
+
+	.more-navigation li.show .sub-menu {
+		display: block !important;
+	}
+
+	.active .more-navigation .current-page-item a {
+		opacity: 1;
+	}
+}
+
+.menu-btn {
+	display: none;
+}
+
+/*--------------------------------------------------------------
+# responsive - Macbook 13 inch
+--------------------------------------------------------------*/
+@media screen and (max-width: 1440px) {
+
+	.site-header {
+		// width: 100%;
+		// height: 80px;
+		
+		padding: 30px 4vw;
+	}
+}
+
+/*--------------------------------------------------------------
+# responsive - Tablet
+--------------------------------------------------------------*/
+@media screen and (max-width: 768px) {
+
+	.site-navigation {
+		display: block;
+	}
+
+	.menu-btn {
+		display: none;
+	}
+}
+
+/*--------------------------------------------------------------
+# responsive - Mobile
+--------------------------------------------------------------*/
+@media screen and (max-width: 480px) {
+	.site-header {
+		padding: 30px 7vw;
+		height: 60px;
+	}
+
+	.site-navigation {
+		display: none;
+	}
+
+	.menu-btn {
+		display: block;
+		position: absolute;
+		right: 12px;
+		top: 0;
+		width: 40px;
+		height: 40px;
+		cursor: pointer;
+		z-index: 9999;
+
+		.menu-icon {
+			position: relative;
+			height: 100%;
+			width: 100%;
+			display: block;
+			background: url(svg/icon-menu-w.svg) no-repeat center;
+			background-size: 24px;
+		}
+
+		&.active .menu-icon {
+			background: url(svg/icon-cancel-w.svg) no-repeat center;
+			background-size: 24px;
+		}
+
+	}
+
+}

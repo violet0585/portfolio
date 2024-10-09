@@ -1,0 +1,249 @@
+// $font-main: 'Pretendard Variable', Pretendard, -apple-system, 'Apple SD Neo Gothic', sans-serif;
+$font-main: 'NeueMontreal', sans-serif;
+$font-serif: 'Playfair Display', serif;
+
+$font-code: Monaco, Consolas, "Andale Mono", "DejaVu Sans Mono", monospace;
+$font-pre: "Courier 10 Pitch", Courier, monospace;
+$font-line-height-head: 1.25;
+$font-line-height-body: 1.6;
+$font-line-height-pre: 1.5;
+
+html {
+    font-size: 16px;
+    -webkit-text-size-adjust: 100%;
+    -ms-text-size-adjust: 100%
+}
+
+body {
+    font-size: 16px;
+    line-height: $font-line-height-body;
+    font-family: $font-main;
+}
+
+body,
+button,
+input,
+select,
+optgroup,
+textarea {
+    color: $color-text-primary;
+    line-height: $font-line-height-body;
+}
+
+.serif {
+    font-family: $font-serif;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5{
+    clear: both;
+    color: $color-text-primary;
+    font-weight: 400;
+    line-height: $font-line-height-head;
+    margin-top: 0;
+    margin-bottom: 16px;
+    letter-spacing: -0.04px;
+
+    a {
+        font-weight: inherit;
+        color: inherit;
+    }
+}
+
+.hero-title {
+    font-size: 96px;
+    line-height: 110%;
+}
+
+h1 {
+    font-size: 60px;
+}
+
+h2 {
+    font-size: 48px;
+}
+
+h3 {
+    font-size: 36px;
+}
+
+h4 {
+    font-size: 28px;
+}
+
+h5 {
+    font-size: 24px;
+}
+
+h6 {
+    font-size: 18px;
+    margin-bottom: 8px;
+    // line-height: 1;
+}
+
+
+p {
+    font-size: 18px;
+    line-height: 1.8;
+    color: $color-text-primary;
+    // margin:0;
+}
+
+a {
+    transition: all 0.3s;
+    text-decoration: none;
+    color: $color-text-primary;
+
+    &:hover,
+    &:focus,
+    &:active {
+        text-decoration: none;
+    }
+
+    &:focus {
+        outline: 0;
+    }
+
+    &:hover,
+    &:active {
+        outline: 0;
+    }
+}
+
+.border-top {
+    border-top: 3px dotted $color-primary;
+    padding-top: 5px;
+}
+
+blockquote {
+    background-color: transparent;
+    padding-left: 12px;
+    border-left: 3px solid $color-text-secondary;
+    margin: 20px 0;
+
+    p {
+        font-size: 18px;
+        font-weight: bold;
+        margin: 0;
+    }
+}
+
+/*added*/
+.strong {
+    font-weight: 700;
+    // color: $color-primary;
+    font-size: 1vw;
+    margin-bottom: 10px;
+}
+
+.mar0 {
+    margin-top: 0;
+    font-weight: 400;
+}
+
+.project-des{
+    color: $color-text-primary;
+    font-size: 18px;
+    font-weight: 500;
+    border-radius: 40px;
+    transition: all 0.3s;
+    margin: 2vw 2vw 16vw 2vw;
+    padding-bottom: 2vw;
+    border-bottom: 1px solid $color-text-primary;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.title {
+    font-weight: bold;
+    margin-top: 80px;
+    font-size: 80px;
+}
+
+.linear-gradient{
+    background: linear-gradient(to top, $color-primary 50%, transparent 50%);
+    width: fit-content;
+}
+
+/*--------------------------------------------------------------
+# responsive - Laptop
+--------------------------------------------------------------*/
+@media screen and (max-width: 1440px) {
+    .title {
+        font-size: 60px;
+    }
+    .project-des{
+        font-size: 14px;
+    }
+}
+
+/*--------------------------------------------------------------
+# responsive - Tablet
+--------------------------------------------------------------*/
+@media screen and (max-width: 768px) {}
+
+/*--------------------------------------------------------------
+# responsive - Mobile
+--------------------------------------------------------------*/
+@media screen and (max-width: 480px) {
+
+    .hero-title {
+        font-size: 48px;
+    }
+
+    h1 {
+        font-size: 40px;
+    }
+
+    h2 {
+        font-size: 36px;
+    }
+
+    .archive-description {
+        font-size: 20px;
+    }
+
+    .category-title {
+        font-size: 24px;
+    }
+
+    h3 {
+        font-size: 28px;
+    }
+
+    h4 {
+        font-size: 24px;
+    }
+
+    h5 {
+        font-size: 20px;
+    }
+
+    h6 {
+        font-size: 18px;
+    }
+
+
+    p {
+        font-size: 16px;
+    }
+
+    .project-des{
+        color: $color-text-primary;
+        border-radius: 40px;
+        transition: all 0.3s;
+        margin: 2vw 2vw 16vw 2vw;
+        padding-bottom: 2vw;
+        border-bottom: 1px solid $color-text-primary;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+    .strong {
+        font-size: 4vw;
+    }
+}

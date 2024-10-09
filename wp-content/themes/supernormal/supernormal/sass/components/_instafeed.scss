@@ -1,0 +1,15 @@
+#sb_instagram {
+    padding: 20px;
+    border: 1px solid #3e4246;
+    border-radius: 8px;
+}
+
+/*--------------------------------------------------------------
+# responsive - Mobile
+--------------------------------------------------------------*/
+@media screen and (max-width: 480px) {
+    #sb_instagram {
+        padding: 12px;
+    }
+
+}

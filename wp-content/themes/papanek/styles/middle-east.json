@@ -1,0 +1,42 @@
+{
+  "$schema": "https://schemas.wp.org/trunk/theme.json",
+  "version": 2,
+  "title": "Middle East",
+  "settings": {
+    "color": {
+      "palette": [
+        {
+          "slug": "primary",
+          "color": "#1E2640",
+          "name": "Primary"
+        },
+        {
+          "slug": "primary-second",
+          "color": "#2B375F",
+          "name": "Primary Second"
+        },
+        {
+          "slug": "secondary",
+          "color": "#DC9750",
+          "name": "Secondary"
+        },
+        {
+          "slug": "background",
+          "color": "#F3EAC0",
+          "name": "Background"
+        },
+        {
+          "slug": "background-secondary",
+          "color": "#DFD297",
+          "name": "Background Gray"
+        }
+      ]
+    }
+  },
+  "styles": {
+    "color": {
+      "background": "var(--wp--preset--color--background)",
+      "text": "var(--wp--preset--color--primary)"
+    }
+  }
+}

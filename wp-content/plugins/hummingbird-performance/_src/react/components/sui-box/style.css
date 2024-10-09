@@ -1,0 +1,15 @@
+.sui-2-12-24 .sui-wrap .sui-box {
+  position: relative;
+  /* Status text on dashboard meta boxes */
+}
+.sui-2-12-24 .sui-wrap .sui-box .status-text {
+  color: #888888;
+  font-size: 13px;
+  line-height: 22px;
+  margin-top: 5px;
+}
+.sui-2-12-24 .sui-wrap .sui-box .label-notice-inline {
+  font-size: 13px;
+  color: #888888;
+  margin: 0 15px;
+}/*# sourceMappingURL=style.css.map */

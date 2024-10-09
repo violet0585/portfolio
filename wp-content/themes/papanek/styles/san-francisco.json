@@ -1,0 +1,42 @@
+{
+  "$schema": "https://schemas.wp.org/trunk/theme.json",
+  "version": 2,
+  "title": "San Francisco",
+  "settings": {
+    "color": {
+      "palette": [
+        {
+          "slug": "primary",
+          "color": "#2F5061",
+          "name": "Primary"
+        },
+        {
+          "slug": "primary-second",
+          "color": "#4297A0",
+          "name": "Primary Second"
+        },
+        {
+          "slug": "secondary",
+          "color": "#E57F84",
+          "name": "Secondary"
+        },
+        {
+          "slug": "background",
+          "color": "#F4EAE6",
+          "name": "Background"
+        },
+        {
+          "slug": "background-secondary",
+          "color": "#EFDAD2",
+          "name": "Background Gray"
+        }
+      ]
+    }
+  },
+  "styles": {
+    "color": {
+      "background": "var(--wp--preset--color--background)",
+      "text": "var(--wp--preset--color--primary)"
+    }
+  }
+}

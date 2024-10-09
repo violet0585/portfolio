@@ -1,0 +1,48 @@
+.sui-2-12-24 .sui-wrap .box-minification-assets-auto-config .sui-box-body .sui-tabs {
+  margin-top: 30px !important;
+}
+.sui-2-12-24 .sui-wrap .box-minification-assets-auto-config .sui-box-body .sui-tabs:not(.sui-side-tabs).sui-tabs-flushed > .sui-tabs-menu {
+  border-top-width: 1px;
+}
+.sui-2-12-24 .sui-wrap .box-minification-assets-auto-config .sui-box-body .sui-table th {
+  height: 30px;
+}
+.sui-2-12-24 .sui-wrap .box-minification-assets-auto-config .sui-box-body .sui-table th:nth-child(2) {
+  width: 15%;
+}
+.sui-2-12-24 .sui-wrap .box-minification-assets-auto-config .sui-box-body .sui-table th:last-child {
+  width: 60%;
+}
+.sui-2-12-24 .sui-wrap .box-minification-assets-auto-config .sui-box-body .sui-table tbody tr {
+  background-color: rgba(242, 242, 242, 0.5);
+}
+.sui-2-12-24 .sui-wrap .box-minification-assets-auto-config .sui-box-body .sui-upsell-row {
+  margin-bottom: -30px !important;
+  margin-top: 30px;
+}
+.sui-2-12-24 .sui-wrap .box-minification-assets-auto-config .sui-box-body .sui-upsell-row img.sui-upsell-image {
+  width: 127px;
+}
+.sui-2-12-24 .sui-wrap .box-minification-assets-auto-config .sui-box-body .sui-tab-content .sui-table.sui-table-flushed {
+  margin: 20px auto 40px -30px;
+  width: calc(100% + 60px);
+}
+.sui-2-12-24 .sui-wrap .box-minification-assets-auto-config .sui-box-body .sui-tab-content tbody tr td:first-of-type {
+  display: flex;
+  align-items: center;
+}
+.sui-2-12-24 .sui-wrap .box-minification-assets-auto-config .sui-box-body .sui-tab-content tbody tr td:first-of-type img {
+  margin-right: 10px;
+}
+.sui-2-12-24 .sui-wrap .box-minification-assets-auto-config .sui-box-body .sui-tab-content tbody tr td:last-of-type {
+  color: #AAAAAA;
+}
+.sui-2-12-24 .sui-wrap .box-minification-assets-auto-config .sui-box-body .sui-tab-content .sui-form-field {
+  margin-bottom: 10px;
+}
+.sui-2-12-24 .sui-wrap .box-minification-assets-auto-config .sui-box-body .sui-tab-content .sui-form-field:last-of-type {
+  margin-bottom: 0;
+}
+.sui-2-12-24 .sui-wrap .box-minification-assets-auto-config .sui-box-body .sui-tab-content .sui-form-field .sui-description.sui-checkbox-description {
+  margin-left: 27px;
+}/*# sourceMappingURL=configurations.css.map */

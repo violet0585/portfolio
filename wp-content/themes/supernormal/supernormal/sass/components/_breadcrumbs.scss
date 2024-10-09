@@ -1,0 +1,45 @@
+.breadcrumb {
+    border: 1px solid #3e4246;
+    padding: 16px;
+    margin-bottom: 40px;
+    border-radius: 12px;
+
+    .flex-wrap {
+        display: flex;
+        gap: 4px;
+        align-items: center;
+
+        span {
+            font-size: 14px;
+            line-height: 20px;
+
+            a {
+                color: #fff;
+            }
+
+            &.current {
+                color: $color-text-light-02;
+            }
+        }
+
+        .arrow {
+            width: 20px;
+            height: 20px;
+            display: block;
+            background: url(svg/icon-arrow-right-w.svg) no-repeat center;
+            background-size: 18px;
+            opacity: 0.4;
+        }
+    }
+}
+
+
+/*--------------------------------------------------------------
+# responsive - Mobile
+--------------------------------------------------------------*/
+@media screen and (max-width: 480px) {
+    .breadcrumb {
+        display: none;
+    }
+
+}
