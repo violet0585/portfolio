@@ -28,7 +28,7 @@ $thumb = wp_get_attachment_image_src(get_post_thumbnail_id($post->ID), 'full');
     <div class="short-des">
         <p>Perosnal Project</p>
         <p>Mobile App</p>
-        <p>2 weeks</p>
+        <p>1 month</p>
         <p>UX Research and Design</p>
     </div>
 </div>
@@ -39,7 +39,7 @@ $thumb = wp_get_attachment_image_src(get_post_thumbnail_id($post->ID), 'full');
     <div class="body-gap"></div>
         <div class="body">
             <div>
-            <video style="max-width: 200px;" autoplay loop muted>
+            <video style="max-width: 250px;" autoplay loop muted>
                 <source src="<?php echo esc_url( get_template_directory_uri() . ('/img/Googlemap-backgroundVideo.mp4')); ?>" type="video/mp4">
             </video>
             </div>

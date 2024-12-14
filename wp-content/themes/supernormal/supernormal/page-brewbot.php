@@ -18,7 +18,7 @@ $thumb = wp_get_attachment_image_src(get_post_thumbnail_id($post->ID), 'full');
     <div class="main">
         <div class="left">
             <h1 class="title">From Idea <br>to <span style="color: #974EC3;">Espresso</span></h1>
-            <h4>Blending robotics with a human-centered <br>coffee experience enhances campus life through innovative and friendly service</h4>
+            <h4>Blending robotics with a human-centered coffee experience enhances campus life through innovative and friendly service</h4>
         </div>
         <div class="right">
             <img style="height: 30vw;" src=<?php echo esc_url( get_template_directory_uri() . ('/img/Brewbot-monitorRobot.png')); ?> >
@@ -26,7 +26,7 @@ $thumb = wp_get_attachment_image_src(get_post_thumbnail_id($post->ID), 'full');
     </div>
     <div class="short-des">
         <p>UNC Interdisciplinary Team Project</p>
-        <p>Collaborated with UNC Blue Sky Innovation<br>Project Advisor: Steven King</p>
+        <p>Collaborated with UNC Blue Sky Innovation</p>
         <p>4 months</p>
         <p>Web Design <br>Setting up an ordering system using Square</p>
     </div>
@@ -50,8 +50,8 @@ $thumb = wp_get_attachment_image_src(get_post_thumbnail_id($post->ID), 'full');
         <div class="body-gap"></div>
         <div class="body-gap"></div>
         <p class="stitle">Why Integrate Robotics into the Coffee Experience?</p>
-        <h2 class="title2">Transforming Perceptions</h2>
-        <h4 class="mtitle">BrewBot is revolutionizing the coffee experience by bringing innovation and engagement into daily routines. The initiative emerged from a desire to reshape perceptions about robotics, demonstrating that technology can be both groundbreaking and accessible. <span class="linear-gradient">BrewBot aims to bridge the gap between technological potential and public perception, making robotics approachable and enjoyable.</span> Through this integration, BrewBot seeks to transform the way we interact with technology, blending advanced solutions with a user-friendly approach.</h4>
+        <h2 class="title2">Making Technology More Approachable</h2>
+        <h4 class="mtitle">We created BrewBot to show that robots can be part of our everyday moments in a friendly way. The idea came from wanting to help people feel more comfortable with new technology. <span class="linear-gradient">BrewBot aims to bridge the gap between technological potential and public perception, making robotics approachable and enjoyable.</span> Through this integration, BrewBot seeks to transform the way we interact with technology, blending advanced solutions with a user-friendly approach.</h4>
         <div class="img-list">
             <img class="list-img" src=<?php echo esc_url( get_template_directory_uri() . ('/img/Brewbot-2.jpg')); ?> >
             <img class="list-img" src=<?php echo esc_url( get_template_directory_uri() . ('/img/Brewbot-3.jpg')); ?> >
@@ -90,17 +90,17 @@ $thumb = wp_get_attachment_image_src(get_post_thumbnail_id($post->ID), 'full');
         <div class="body-gap"></div>
         <div class="body-gap"></div>
 
-        <p class="stitle">End-to-End User Journey Map </p>
+        <!-- <p class="stitle">End-to-End User Journey Map </p> -->
         <!-- <h2 class="title2">어떤식의 user flow인지</h2> -->
-        <img allowfullscreen style="height: augo; margin:auto; margin-top: 40px;" src=<?php echo esc_url( get_template_directory_uri() . ('/img/Brewbot-journeyMap.png')); ?>>
-        <div class="body-gap"></div>
-        <div class="body-gap"></div>
+        <!-- <img allowfullscreen style="height: augo; margin:auto; margin-top: 40px;" src=<?php echo esc_url( get_template_directory_uri() . ('/img/Brewbot-journeyMap.png')); ?>> -->
+        <!-- <div class="body-gap"></div> -->
+        <!-- <div class="body-gap"></div> -->
 
-        <p class="stitle">UX Resarch-Informed Features</p>
+        <p class="stitle">UX Research-Informed Features</p>
         <h2 class="title2">Through UX research, we identified key features to enhance the BrewBot experience</h2>
         <div class="body-gap"></div>
         <div class="body">
-            <video width="500vw" autoplay loop muted>
+            <video width="600vw" autoplay loop muted>
                 <source src="<?php echo esc_url( get_template_directory_uri() . ('/img/Brewbot-FAQvideo.mp4')); ?>" type="video/mp4">
             </video>
             <div class="right">
@@ -115,7 +115,7 @@ $thumb = wp_get_attachment_image_src(get_post_thumbnail_id($post->ID), 'full');
                 <h2 class="title2">First-Time User Guide</h2>
                 <h4 class="mtitle"><span class="linear-gradient">To make the first-time experience with BrewBot smooth and welcoming,</span> a personalized onboarding process is introduced. This includes a step-by-step walkthrough of how to use BrewBot, highlighting key features. </h4>
             </div>
-            <video width="500vw" autoplay loop muted>
+            <video width="600vw" autoplay loop muted>
                 <source src="<?php echo esc_url( get_template_directory_uri() . ('/img/Brewbot-guide.mp4')); ?>" type="video/mp4">
             </video>
             
@@ -134,7 +134,7 @@ $thumb = wp_get_attachment_image_src(get_post_thumbnail_id($post->ID), 'full');
 
         <p class="stitle">Final Website</p>
         <div class="body">
-        <h2 class="title2">Explore the BrewBot <br>Live Website!</h2>
+        <h2 class="title2">Explore the BrewBot Live Website!</h2>
             <div class="right">
                 <a href="https://www.brewbot.co/" target="_blank">
                 <img class="brewbot-logo" style="width: 70%; margin: auto; margin-top: -60px;" src=<?php echo esc_url( get_template_directory_uri() . ('/img/Brewbot-logo.png')); ?> >
@@ -147,12 +147,12 @@ $thumb = wp_get_attachment_image_src(get_post_thumbnail_id($post->ID), 'full');
 <div class="introduction3">
     <div class="body-gap"></div>
     <p class="stitle">Key Takeaways</p>
-    <h2 class="title2">Synchronizing Efforts Through Communication</h2>
-    <h4 class="mtitle">I found that communication with other teams was crucial throughout the project. Since we had multiple interdisciplinary teams, it was important to stay informed about the phase each team was in. To do this, we held weekly meetings with all teams, which allowed us to exchange feedback and identify problems or areas for improvement that we might not have noticed within our own team. <br>For our design team, working closely with the storytelling team was particularly important. We frequently exchanged materials with them, and because they were responsible for marketing, it was essential to collaborate effectively to ensure that the overall design theme was consistent and aligned with the project's goals.</h4>
+    <h2 class="title2">Teamwork Makes the Dream Work</h2>
+    <h4 class="mtitle">The biggest lesson was how important it is to keep everyone in the loop. Since we had different teams working on various parts of the project, our weekly catch-ups became crucial. These meetings weren't just updates - they helped us spot issues we might have missed on our own. Working with the marketing team was especially important for me, as we needed to make sure everything looked and felt consistent.</h4>
     <div class="body-gap"></div>
 
-    <h2 class="title2">Research Unveils Deeper Insights</h2>
-    <h4 class="mtitle">Initially, I approached this website project with the idea of creating a straightforward website to document the process. However, as I delved into research, it became clear that there was much more to consider. Understanding the content that needed to be included and anticipating the user experiences with BrewBot allowed me to think more deeply about the design and functionality. This process highlighted how research can uncover nuances and guide more informed, detailed decisions, ultimately enhancing the overall project.</h4>
+    <h2 class="title2">Research Changed Everything</h2>
+    <h4 class="mtitle">When I started working on the website, I thought it would be pretty straightforward. But once I dug into the research, I realized there was so much more to consider. Taking time to understand what users needed and how they'd interact with BrewBot helped me make better choices about the design. It showed me how good research can really shape a project into something more meaningful.</h4>
 
 </div>
 

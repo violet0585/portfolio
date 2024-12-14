@@ -47,12 +47,15 @@ input[type="submit"],
         border: 2px solid $color-primary;
         padding: 10px;
         display: flex;
-        width: 80%;
+        width: 90%;
         justify-content: center;
         // @include border-radius($radius-xl);
         border-radius: 40px;
         transition: all 0.3s;
         cursor: pointer;
+        margin: auto;
+        margin-bottom: 4vw;
+        margin-top: 2vw;
 
         &:hover,
         &:active
@@ -97,12 +100,9 @@ input[type="submit"],
 
 }
 
-.readmore {
-    margin-top: 30px; 
-}
-
 .press {
     text-decoration: underline;
+    font-weight: 300;
 }
 
 .inline-btns {

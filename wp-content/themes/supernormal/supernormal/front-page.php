@@ -20,14 +20,14 @@ get_header(); ?>
                     <div class="intro">
                         <div>
                             <h2 style="font-weight:bold;">Hi, I'm <span style="color: #974EC3;">Yehee</span>, <br>UI/UX designer based in Bay Area.</h2>
-                            <h5>With studies in graphic communication and information science, <br>I merge creativity with data to craft intuitive and engaging designs.</h5>
+                            <h5>I design with a critical eye for how users can interact more seamlessly and effectively.</h5>
                         </div>
                     </div>
                     <div class="row">
                             <div class="col-5" style="padding-left:0; margin-top: 16px;">
-                                <a class="button row-btn" href="#project3"><span class="icon">1</span>Google Maps 'Add Stop' Redesign</a><br>
-                                <a class="button row-btn" href="#project1"><span class="icon">2</span>Caregiver Strain Index Survey</a><br>
-                                <a class="button row-btn" href="#project2"><span class="icon">3</span>BrewBot</a>
+                                <a class="button row-btn" href="#project1"><span class="icon">1</span>BrewBot</a><br>
+                                <a class="button row-btn" href="#project2"><span class="icon">2</span>Caregiver Strain Index Survey</a><br>
+                                <a class="button row-btn" href="#project3"><span class="icon">3</span>Google Maps 'Add Stop' Redesign</a>
                             </div>
                     </div>
                     <div class="frame">
@@ -42,16 +42,16 @@ get_header(); ?>
             <div class="marquee">
                 <div class="marquee__content">
                     <ul class="list-inline">
-                        <li>I do design, code,</li>
+                        <li>I do design, develop,</li>
                         <li>animate, and think.</li>
                     </ul>
                     <ul class="list-inline">
-                        <li>I do design, code,</li>
+                        <li>I do design, develop,</li>
                         <li>animate, and think.</li>
                         
                     </ul>
                     <ul class="list-inline">
-                        <li>I do design, code,</li>
+                        <li>I do design, develop,</li>
                         <li>animate, and think.</li>
                     </ul>
                     
@@ -62,87 +62,101 @@ get_header(); ?>
         <div class="category-title-wrap">
             <!-- <a class="button line-button" href="<?php echo esc_url(home_url('/work')); ?>">Show More</a> -->
         </div>
-        <div id="project3">
-            <div style="max-width:80%; margin: auto;">
-                <img src=<?php echo esc_url( get_template_directory_uri() . ('/img/Googlemap-intro.png')); ?> >
-            </div>
-            <!-- <a href="<?php echo esc_url(home_url('/careyaya')); ?>"><h3 class="project-title">Wellsfargo -></h3></a> -->
-            <div class="project-des">
-                <div class="col-5">
-                <p class="strong">Refined the 'Add Stop' Feature for Enhanced Usability</p>
-                <h6 class="mar0">Enhanced the 'Add Stop' feature to boost usability and user experience. Key updates include removing unnecessary steps and streamlining interactions, <br>allowing users to view the ETA for all stopover destinations before starting their journey. <br>Insights from user feedback and competitive analysis drove these improvements, <br>addressing usability challenges and emphasizing the importance of ongoing adaptation in UX design.</h6>
-                </div>
-                <div class="col-2">
-                <p class="strong">Role</p>
-                <h6 class="mar0">User research <br>UX/UI design</h6>
-                </div>
-                <div class="col-2">
-                    <p class="strong">Time</p>
-                    <h6 class="mar0">3 weeks</h6>
-                </div>
-                <div class="col-2 readmore">
-                <a class="button readmore-button" href="<?php echo esc_url( home_url( '/googlemap/' ) ); ?>">Read more</a>
-                </div>
-            </div>
-        </div>
-
         <div id="project1">
-            <div style="max-width:80%; margin: auto;">
-                <video style="max-width:100%;" autoplay muted>
-                    <source src="<?php echo esc_url( get_template_directory_uri() . ('/img/caregiver.mp4')); ?>" type="video/mp4">
-                </video>
-            </div>
-            <!-- <a href="<?php echo esc_url(home_url('/careyaya')); ?>"><h3 class="project-title">Empowering Caregivers Through Insightful Self-Assessment</h3></a> -->
-            <div class="project-des">
-                <div class="col-5">
-                    <p class="strong">Empowering Caregivers Through Insightful Self-Assessment</p>
-                    <h6 class="mar0">Developed the Caregiver Strain Index Survey, enabling caregivers to<br>recognize and address their physical and mental challenges, significantly <br>improving their well-being.</h6>
-                </div>
-                <div class="col-3">
-                    <p class="strong">Team</p>
-                    <h6 class="mar0"><span>🙋‍♀️1 UX designer + Frontend developer</span> <br>2 UI/UX designers <br>1 Data analyst <br>1 Frontend developer <br>1 Backend developer</h6>
-                </div>
-                <div class="col-2">
-                    <p class="strong">Time</p>
-                    <h6 class="mar0">8 months</h6>
-                </div>
-                <div class="col-2 readmore">
-                    <a class="button readmore-button" href="<?php echo esc_url( home_url( '/careyaya/' ) ); ?>">Read more</a>
-                </div>
-            </div>
-        </div>
-        <div id="project2">
             <div style="max-width:80%; margin: auto;">
                 <video style="max-width:100%;" autoplay muted>
                     <source src="<?php echo esc_url( get_template_directory_uri() . ('/img/brewbot-short.mp4')); ?>" type="video/mp4">
                 </video>
             </div>
             <!-- <a href="<?php echo esc_url(home_url('/brewbot')); ?>"><h3 class="project-title">BrewBot -></h3></a> -->
-            <div class="project-des">
-                <div class="col-5">
-                    <p class="strong">Redefining Campus Experience with Robotic Coffee Bar</p>
-                    <h6 class="mar0">Introduced BrewBot, a coffee-making robot designed to redefine perceptions of robotics and showcase the transformative power of code with a friendly touch. Launched on our school campus, this collaborative capstone project epitomized camaraderie, strategy, and adaptability, rooted in human-centered design principles.</h6>
+            <div class="project-des-con">
+                <div class="project-des">
+                    <div class="col-5">
+                        <p class="strong">Redefining Campus Experience with Robotic Coffee Bar</p>
+                        <h6 class="mar0">Introduced BrewBot, a coffee-making robot designed to redefine perceptions of robotics and showcase the transformative power of code with a friendly touch. This collaborative capstone project highlighted teamwork, strategy, and adaptability, rooted in human-centered design.</h6>
+                    </div>
+                    <div class="col-2">
+                        <p class="strong">Team<br></p>
+                        <h6 class="mar0">🙋‍♀️4 Designers</h6>
+                        <h6 class="mar0">3 Storytellers</h6>
+                        <h6 class="mar0">3 Developers</h6>
+                        <h6 class="mar0">4 Robotics engineers</h6> 
+                    </div>
+                    <div class="col-2">
+                        <p class="strong">Time</p>
+                        <h6 class="mar0">4 months</h6>
+                    </div>
+                    <div class="col-2">
+                        <p class="strong">Press</p>
+                        <a class="press" href="https://www.youtube.com/watch?v=JEYRySa3WR4" target="_blank">ABC11</a><br>
+                        <a class="press" href="https://linkedin.com/posts/unc-hussman-school-of-journalism-and-media_unchussman-thefutureisus-unc-activity-7191488081336700928-0-ui/" target="_blank">LinkedIn</a><br>
+                        <a class="press" href="https://carolinaconnection.org/2024/04/26/after-a-semester-of-work-unc-students-unveil-a-robotic-barista" target="_blank">Carolina Connection</a>
+                    </div>
                 </div>
-                <div class="col-2">
-                    <p class="strong">Team</p>
-                    <h6 class="mar0"><span>🙋‍♀️4 Design team members</span> <br>4 Robotics team members <br>3 Storytelling team members <br>3 Development team members</h6>
+                <div class="readmore">
+                        <a class="button readmore-button" href="<?php echo esc_url( home_url( '/brewbot/' ) ); ?>">Read more</a>
                 </div>
-                <div class="col-2">
-                    <p class="strong">Time</p>
-                    <h6 class="mar0">4 months</h6>
+            </div>
+        </div>
+
+        <div id="project2">
+            <div style="max-width:80%; margin: auto;">
+                <video style="max-width:100%;" autoplay muted>
+                    <source src="<?php echo esc_url( get_template_directory_uri() . ('/img/caregiver.mp4')); ?>" type="video/mp4">
+                </video>
+            </div>
+            <!-- <a href="<?php echo esc_url(home_url('/careyaya')); ?>"><h3 class="project-title">Empowering Caregivers Through Insightful Self-Assessment</h3></a> -->
+            <div class="project-des-con">
+                <div class="project-des">
+                    <div class="col-5">
+                        <p class="strong">Empowering Caregivers Through Insightful Self-Assessment</p>
+                        <h6 class="mar0">Developed the Caregiver Strain Index Survey, enabling caregivers to recognize and address their physical and mental challenges, significantly improving their well-being.</h6>
+                    </div>
+                    <div class="col-3 wider">
+                        <p class="strong">Team</p>
+                        <h6 class="mar0"><span>🙋‍♀️1 UX designer + Frontend developer</span> 
+                        <h6 class="mar0">2 UI/UX designers</h6> 
+                        <h6 class="mar0">1 Data analyst</h6> 
+                        <h6 class="mar0">1 Frontend developer</h6>
+                        <h6 class="mar0">1 Backend developer</h6>
+                    </div>
+                    <div class="col-2">
+                        <p class="strong">Time</p>
+                        <h6 class="mar0">8 months</h6>
+                    </div>
                 </div>
-                <div class="col-2">
-                    <p class="strong">Press</p>
-                    <a class="press" href="https://www.youtube.com/watch?v=JEYRySa3WR4" target="_blank">ABC11</a><br>
-                    <a class="press" href="https://linkedin.com/posts/unc-hussman-school-of-journalism-and-media_unchussman-thefutureisus-unc-activity-7191488081336700928-0-ui/" target="_blank">LinkedIn</a><br>
-                    <a class="press" href="https://carolinaconnection.org/2024/04/26/after-a-semester-of-work-unc-students-unveil-a-robotic-barista" target="_blank">Carolina Connection</a>
-                </div>
-                <div class="col-2 readmore">
-                <a class="button readmore-button" href="<?php echo esc_url( home_url( '/brewbot/' ) ); ?>">Read more</a>
+                <div class="readmore">
+                        <a class="button readmore-button" href="<?php echo esc_url( home_url( '/careyaya/' ) ); ?>">Read more</a>
                 </div>
             </div>
         </div>
         
+        <div id="project3">
+            <div style="max-width:80%; margin: auto;">
+                <img src=<?php echo esc_url( get_template_directory_uri() . ('/img/Googlemap-intro.png')); ?> >
+            </div>
+            <!-- <a href="<?php echo esc_url(home_url('/careyaya')); ?>"><h3 class="project-title">Wellsfargo -></h3></a> -->
+            <div class="project-des-con">
+                <div class="project-des">
+                    <div class="col-5">
+                    <p class="strong">Refined the 'Add Stop' Feature for Enhanced Usability</p>
+                    <h6 class="mar0">Enhanced the 'Add Stop' feature by simplifying the process, reducing steps, and improving usability. Users can now view the ETA for all stopovers before starting their journey, based on user feedback and competitive analysis.</h6>
+                    </div>
+                    <div class="col-2">
+                    <p class="strong">Role</p>
+                    <h6 class="mar0">User research</h6>
+                    <h6 class="mar0">UX/UI design</h6>
+                    </div>
+                    <div class="col-2">
+                        <p class="strong">Time</p>
+                        <h6 class="mar0">1 month</h6>
+                    </div>
+                </div>
+                <div class="readmore">
+                    <a class="button readmore-button" href="<?php echo esc_url( home_url( '/googlemap/' ) ); ?>">Read more</a>
+                </div>
+            </div>
+        </div>
         
     </div>
 

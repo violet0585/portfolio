@@ -563,21 +563,24 @@ blockquote p {
 
 .mar0 {
   margin-top: 0;
-  font-weight: 400;
+  font-weight: 300;
 }
 
 .project-des {
   color: #12130F;
   font-size: 18px;
   font-weight: 500;
-  border-radius: 40px;
   transition: all 0.3s;
-  margin: 2vw 2vw 16vw 2vw;
-  padding-bottom: 2vw;
-  border-bottom: 1px solid #12130F;
+  margin: 1vw 2vw 0vw 2vw;
   display: flex;
   flex-direction: row;
   justify-content: center;
+}
+
+.project-des-con {
+  border-bottom: 1px solid #12130F;
+  border-radius: 40px;
+  margin-bottom: 5vw;
 }
 
 .title {
@@ -586,8 +589,12 @@ blockquote p {
   font-size: 80px;
 }
 
+.title2 {
+  font-weight: bold;
+}
+
 .linear-gradient {
-  background: linear-gradient(to top, #974EC3 50%, transparent 50%);
+  background: linear-gradient(to top, #974EC3 50%, transparent 90%);
   width: -moz-fit-content;
   width: fit-content;
 }
@@ -601,6 +608,9 @@ blockquote p {
   }
   .project-des {
     font-size: 14px;
+  }
+  .strong {
+    font-size: 18px;
   }
 }
 /*--------------------------------------------------------------
@@ -789,7 +799,7 @@ section .marquee-padding {
 /* ------ */
 @media only screen and (max-width: 1440px) {
   .container {
-    padding: 0 40px;
+    padding: 0 30px;
   }
   .col-5 {
     width: auto;
@@ -817,49 +827,9 @@ section .marquee-padding {
     padding-right: 20px;
   }
 }
-@media only screen and (max-width: 768px) {
-  section {
-    padding: 60px 0;
-  }
-  .container {
-    width: 100%;
-    max-width: 768px;
-    padding: 0 24px;
-  }
-  .row {
-    margin-right: -8px;
-    margin-left: -8px;
-  }
-  .col-2,
-  .col-3,
-  .col-4,
-  .col-5,
-  .col-6,
-  .col-7,
-  .col-8,
-  .col-12 {
-    padding-left: 8px;
-    padding-right: 8px;
-  }
-  .col-9 {
-    width: 100%;
-  }
-  .col-8 {
-    width: 100%;
-  }
-  .col-6 {
-    width: 100%;
-  }
-  .col-4 {
-    width: 50%;
-  }
-  .col-3 {
-    width: 33.3333%;
-  }
-}
 @media only screen and (max-width: 480px) {
   section {
-    padding: 40px 0;
+    padding-top: 40px;
   }
   .container {
     width: 100%;
@@ -896,7 +866,7 @@ section .marquee-padding {
     padding-left: 8px;
     padding-right: 8px;
   }
-  .col-4 {
+  .col-4, .col-2 {
     width: 100%;
   }
   .col-6 {
@@ -907,6 +877,9 @@ section .marquee-padding {
   }
   .col-3 {
     width: 50%;
+  }
+  .wider {
+    width: 100%;
   }
 }
 /*--------------------------------------------------------------
@@ -1103,11 +1076,14 @@ input[type=submit].readmore-button,
   border: 2px solid #974EC3;
   padding: 10px;
   display: flex;
-  width: 80%;
+  width: 90%;
   justify-content: center;
   border-radius: 40px;
   transition: all 0.3s;
   cursor: pointer;
+  margin: auto;
+  margin-bottom: 4vw;
+  margin-top: 2vw;
 }
 button.readmore-button:hover, button.readmore-button:active,
 .button.readmore-button:hover,
@@ -1179,12 +1155,9 @@ input[type=submit].project-button,
   align-items: center;
 }
 
-.readmore {
-  margin-top: 30px;
-}
-
 .press {
   text-decoration: underline;
+  font-weight: 300;
 }
 
 .inline-btns button,
@@ -2514,6 +2487,9 @@ footer.site-footer .site-info .copyright a:active, footer.site-footer .site-info
     margin-top: 40px;
     font-size: 14px;
   }
+  .scroll-top {
+    right: 14vw;
+  }
 }
 /*--------------------------------------------------------------
 # swiper
@@ -2783,7 +2759,7 @@ footer.site-footer .site-info .copyright a:active, footer.site-footer .site-info
 .about-section {
   padding: 0 0 85px 0;
   display: grid;
-  grid-template-columns: 2fr 1fr;
+  grid-template-columns: 1fr 1fr;
   grid-template-rows: auto auto;
   gap: 20px;
   padding: 0 4vw;
@@ -2846,7 +2822,7 @@ footer.site-footer .site-info .copyright a:active, footer.site-footer .site-info
   align-items: flex-start;
   gap: 20px;
   margin: 0 auto;
-  max-width: 38vw;
+  max-width: 35vw;
 }
 
 .row {
@@ -2862,7 +2838,6 @@ footer.site-footer .site-info .copyright a:active, footer.site-footer .site-info
 }
 
 .frame {
-  width: 800px;
   height: 423px;
   display: none;
 }
@@ -2920,7 +2895,7 @@ footer.site-footer .site-info .copyright a:active, footer.site-footer .site-info
   display: flex;
   flex-direction: row;
   height: auto;
-  gap: 6vw;
+  gap: 4vw;
   width: 70vw;
   margin: auto;
 }
@@ -3022,7 +2997,7 @@ footer.site-footer .site-info .copyright a:active, footer.site-footer .site-info
 .introduction2 {
   height: auto;
   background-color: #111;
-  padding: 30px 314px 0 314px;
+  padding: 0 5w;
 }
 .introduction2 .stitle {
   color: #fff;
@@ -3162,7 +3137,7 @@ footer.site-footer .site-info .copyright a:active, footer.site-footer .site-info
     font-size: 16px;
   }
   h6 {
-    font-size: 14px;
+    font-size: 15px;
   }
   img {
     max-width: 100%;
@@ -3174,6 +3149,8 @@ footer.site-footer .site-info .copyright a:active, footer.site-footer .site-info
   .col-5 {
     margin-bottom: 20px;
     max-width: 40vw;
+    padding-left: 1vw;
+    padding-right: 2vw;
   }
   video {
     max-width: 100%;
@@ -3220,7 +3197,7 @@ footer.site-footer .site-info .copyright a:active, footer.site-footer .site-info
     font-size: 14px;
   }
   .img-list .list-img {
-    height: 310px;
+    height: 21vw;
   }
 }
 /*--------------------------------------------------------------
@@ -3319,12 +3296,48 @@ footer.site-footer .site-info .copyright a:active, footer.site-footer .site-info
   .body-scroll {
     gap: 10px;
   }
+  .more-section {
+    display: block;
+  }
   .img-list {
     flex-direction: column;
   }
   .img-list .list-img {
     height: auto;
     width: 100%;
+  }
+  .text-list {
+    display: flex;
+    flex-direction: column; /* Align buttons horizontally */
+    justify-content: space-between; /* Distribute buttons evenly */
+    gap: 10px; /* Add space between buttons */
+  }
+  .media-display {
+    width: 100%;
+    height: auto; /* Let the content define the height */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+    position: relative; /* Keep this to control the position of the items */
+    min-height: 400px; /* Ensure it doesn't collapse */
+  }
+  .poster-item {
+    display: block;
+    width: 100%;
+    height: auto;
+    -o-object-fit: contain;
+       object-fit: contain; /* Maintain the image aspect ratio */
+  }
+  .media-item {
+    display: none; /* Hidden initially */
+    width: 100%; /* Take the full width of the container */
+  }
+  .media-item.active {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
   }
 }
 /*--------------------------------------------------------------

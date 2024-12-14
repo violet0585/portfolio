@@ -148,7 +148,7 @@ section {
 
 @media only screen and (max-width: 1440px) {
     .container {
-        padding: 0 40px;
+        padding: 0 30px;
     }
     .col-5 {
         width: auto;
@@ -183,61 +183,61 @@ section {
 
 }
 
-@media only screen and (max-width: 768px) {
-    section {
-        padding: 60px 0;
-    }
+// @media only screen and (max-width: 768px) {
+//     section {
+//         padding: 60px 0;
+//     }
 
 
-    .container {
-        width: 100%;
-        max-width: 768px;
-        padding: 0 24px;
-    }
+//     .container {
+//         width: 100%;
+//         max-width: 768px;
+//         padding: 0 24px;
+//     }
 
-    .row {
-        margin-right: -8px;
-        margin-left: -8px;
-    }
+//     .row {
+//         margin-right: -8px;
+//         margin-left: -8px;
+//     }
 
-    .col-2,
-    .col-3,
-    .col-4,
-    .col-5,
-    .col-6,
-    .col-7,
-    .col-8,
-    .col-12 {
-        padding-left: 8px;
-        padding-right: 8px;
-    }
+//     .col-2,
+//     .col-3,
+//     .col-4,
+//     .col-5,
+//     .col-6,
+//     .col-7,
+//     .col-8,
+//     .col-12 {
+//         padding-left: 8px;
+//         padding-right: 8px;
+//     }
 
-    .col-9 {
-        width: 100%;
-    }
+//     .col-9 {
+//         width: 100%;
+//     }
 
-    .col-8 {
-        width: 100%;
-    }
+//     .col-8 {
+//         width: 100%;
+//     }
 
-    .col-6 {
-        width: 100%;
-    }
+//     .col-6 {
+//         width: 100%;
+//     }
 
-    .col-4 {
-        width: 50%;
-    }
+//     .col-4 {
+//         width: 50%;
+//     }
 
-    .col-3 {
-        width: 33.3333%;
-    }
-}
+//     .col-3 {
+//         width: 33.3333%;
+//     }
+// }
 
 @media only screen and (max-width: 480px) {
     .section-blog {}
 
     section {
-        padding: 40px 0;
+        padding-top: 40px;
     }
 
     .container {
@@ -283,7 +283,7 @@ section {
         padding-right: 8px;
     }
 
-    .col-4 {
+    .col-4, .col-2 {
         width: 100%;
     }
 
@@ -297,5 +297,8 @@ section {
 
     .col-3 {
         width: 50%;
+    }
+    .wider {
+        width: 100%;
     }
 }
